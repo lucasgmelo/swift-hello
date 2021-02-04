@@ -10,12 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center) {
+            Spacer()
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             
+            Spacer()
             
+            HStack {
+                Spacer()
+                Text("Lucas")
+                Spacer()
+                Text("Melo")
+                Spacer()
+            }
+            Spacer()
             
+        }
+
         
     }
 }
