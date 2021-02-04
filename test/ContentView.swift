@@ -9,26 +9,54 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        VStack(alignment: .center) {
-            Spacer()
-            Image("logo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+
+        ZStack{
+
+            Image("background").ignoresSafeArea()
             
-            Spacer()
-            
-            HStack {
+            VStack{
                 Spacer()
-                Text("Lucas")
+                Image("logo")
                 Spacer()
-                Text("Melo")
+                HStack {
+                    Spacer()
+                    Image("card2")
+                    Spacer()
+                    Image("card3")
+                    Spacer()
+                }
+                Spacer()
+                
+                Image("dealbutton")
+                Spacer()
+                HStack {
+                    Spacer()
+                    VStack{
+                        Text("Player")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                    VStack{
+                        Text("CPU")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.white)
+                            .padding(.bottom, 10.0)
+                        Text("0")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                    }
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
-            
         }
-
         
     }
 }
